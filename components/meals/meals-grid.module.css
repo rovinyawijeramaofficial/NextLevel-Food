@@ -1,0 +1,22 @@
+.meals {
+  width: 110%;
+  max-width: 90rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  grid-gap: 5rem;
+  margin: 2rem auto;
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .meals {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets or smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .meals {
+    grid-template-columns: 1fr; /* 1 column for mobile devices */
+  }
+}
